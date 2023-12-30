@@ -1,6 +1,7 @@
 # Previsão de Churn para clientes bancários
 Prever a rotatividade de clientes num banco.
 
+### Dicionário dos dados:
 
 - RowNumber—corresponde ao número do registo (linha) e não tem qualquer efeito na saída.
 - CustomerId—contém valores aleatórios e não tem qualquer efeito sobre a saída do cliente do banco.
@@ -15,7 +16,7 @@ Prever a rotatividade de clientes num banco.
 - HasCrCard—indica se um cliente tem ou não um cartão de crédito. Esta coluna também é relevante, uma vez que as pessoas com um cartão de crédito têm menos probabilidades de abandonar o banco.
 - IsActiveMember—os clientes activos têm menos probabilidades de abandonar o banco.
 - EstimatedSalary—tal como acontece com o equilíbrio, as pessoas com salários mais baixos têm mais probabilidades de abandonar o banco do que as pessoas com salários mais elevados.
-- Exited—quer o cliente tenha ou não saído do banco.
+- Exited—utilizado como objetivo. 1 se o cliente abandonou o banco durante um determinado período ou 0 se não o fez.
 
 Como sabemos, é muito mais dispendioso angariar um novo cliente do que manter um cliente existente.
 
@@ -25,3 +26,28 @@ A prevenção do churn permite às empresas desenvolver programas de fidelizaç�
 
 
 link https://www.kaggle.com/datasets/mathchi/churn-for-bank-customers
+
+### Ferramentas
+
+- Python
+- Streamlit
+
+### Passos:
+
+1. Obejtivo
+2. Problema de negócio
+3. Obtenção dos dados
+4. Análise exploratória
+5. Tratamento dos valores faltantes
+6. Pré-processamento dos dados
+7. validação cruzada dos modelos de machine learning
+	1. Naive Bayes
+	2. Random Forest
+	3. KNN
+	4. Regression Logistic
+	5. SVM
+	6. Redes Neurais Artificiais
+8. Teste de hipóteses
+9. Tunning hiperparâmetros
+10. Treinamento do modelo
+11. Implementação em aplicação web
