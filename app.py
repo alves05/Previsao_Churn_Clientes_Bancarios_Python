@@ -73,8 +73,13 @@ def main():
         "<h3 style='text-align: center; font-family: Verdana'>Análise e Monitoramento dos Clientes</h3>",
         unsafe_allow_html=True,
     )
-    st.header('', divider='green')
-    st.sidebar.title('Filtros')
+    st.header('', divider='gray')
+    st.sidebar.image('./img/outros/logo.png', use_column_width='always')
+    st.sidebar.markdown(
+        "<h3 style='text-align: center; font-family: Verdana'>Filtros:</h3>",
+        unsafe_allow_html=True,
+    )
+    st.sidebar.markdown('')
 
     # Definindo colunas dos dados
     colunas = [
@@ -171,21 +176,22 @@ def main():
     ]
 
     # Plot da tabela
-    st.header('')
+    st.markdown('')
     st.markdown(
         "<h6 style='text-align: center; font-family: Verdana'>Tabela de Monitoramento dos Clientes com Probabilidade de Churn</h6>",
         unsafe_allow_html=True,
     )
     st.dataframe(tabela, width=850, height=350)
     st.write('🔴: Em Churn |', '🟡: Risco de Churn |', '🟢: Sem Risco de Churn')
+    st.header('', divider='gray')
 
     # Análise
-    st.header('')
+    st.markdown('')
     st.markdown(
-        "<h4 style='text-align: center; font-family: Verdana'>Distribuição e Taxa de Probabilidade de Churn</h4>",
-        unsafe_allow_html=True
+        "<h5 style='text-align: center; font-family: Verdana'>Distribuição e Taxa de Probabilidade de Churn</h5>",
+        unsafe_allow_html=True,
     )
-    st.header('', divider='green')
+    st.header('', divider='gray')
 
     # Configurando gráficos
     total_status = tabela.groupby('Status').size().reset_index(name='Contagem')
@@ -237,7 +243,7 @@ def main():
     col1, col3 = st.columns([2.2, 1])
     col1.plotly_chart(barra)
     col3.plotly_chart(pizza)
-    st.header('', divider='green')
+    st.header('', divider='gray')
     st.caption('Relatório versão 1.0')
 
 
