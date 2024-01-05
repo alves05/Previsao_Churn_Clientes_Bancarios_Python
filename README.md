@@ -47,7 +47,7 @@ A equipe de dados propôs uma solução que consiste no desenvolvimento de um mo
 
 >Clique na Imagem Abaixo para Abrir a Análise de Churn.
 
-[<img src='./img/outros/logo.png' width=400>]()
+[<img src='./img/outros/logo.png' width=400>](https://previsaochurnclientesbancariospython-gideo3l3hfehvekdjj2bdd.streamlit.app/)
 
 ## Desenvolvimento do Projeto:
 
