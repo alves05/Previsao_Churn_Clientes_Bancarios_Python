@@ -102,7 +102,7 @@ def main():
     tabela['Churn %'] = probabilidade['Probabilidade'].astype(float).round(2)
     tabela['CustomerId'] = tabela['CustomerId'].astype(str)
     tabela['IsActiveMember'] = tabela['IsActiveMember'].replace(
-        [0, 1], ['Ativo', 'Não Ativo']
+        [0, 1], ['Inativo', 'Ativo']
     )
     tabela['Gender'] = tabela['Gender'].replace(
         ['Female', 'Male'], ['Feminino', 'Masculino']
@@ -144,7 +144,7 @@ def main():
         'País:', ['Alemanha', 'Espanha', 'França', 'Todos'], index=3
     )
     atividade = st.sidebar.radio(
-        'Atividade dos Clientes:', ['Ativo', 'Não Ativo', 'Todos'], index=2
+        'Atividade dos Clientes:', ['Ativo', 'Inativo', 'Todos'], index=2
     )
 
     for indice, linha in tabela.iterrows():
