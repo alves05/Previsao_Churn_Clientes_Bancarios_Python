@@ -1,5 +1,7 @@
 # Previsão de Churn para Clientes Bancários
 
+### Veja a análise completa desse projeto em [Análise e Previsão de Churn](https://sites.google.com/view/portflio-wiliams-alves/in%C3%ADcio/previs%C3%A3o-de-churn?authuser=0).
+
 ## Objetivo do Projeto:
 O objetivo do projeto é desenvolver um sistema de previsão de churn para clientes de um banco, aplicando técnicas de machine learning e análise preditiva.
 
